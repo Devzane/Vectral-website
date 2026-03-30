@@ -20,8 +20,8 @@
 import { useState, useEffect } from "react";
 
 // --- Constants (industry-standard benchmarks, NOT user-adjustable) ---
-const MISSED_CALL_RATE = 0.30;       // 30% of inbound calls go unanswered
-const VOICEMAIL_DROPOFF_RATE = 0.85; // 85% of people who hit voicemail never call back
+const MISSED_CALL_RATE = 0.25;       // 25% of inbound calls go unanswered
+const VOICEMAIL_DROPOFF_RATE = 0.80; // 80% of people who hit voicemail never call back
 
 // --- Types ---
 interface ROICalculatorProps {
@@ -31,8 +31,8 @@ interface ROICalculatorProps {
 export default function ROICalculator({ onCalcChange }: ROICalculatorProps) {
   // --- State: the three user-controlled inputs ---
   const [weeklyCallVolume, setWeeklyCallVolume] = useState<number>(50);
-  const [averageJobValue, setAverageJobValue] = useState<number>(8000);
-  const [closeRate, setCloseRate] = useState<number>(30);
+  const [averageJobValue, setAverageJobValue] = useState<number>(1000);
+  const [closeRate, setCloseRate] = useState<number>(25);
 
   /**
    * FORMULA (runs on every state change):
@@ -125,8 +125,8 @@ export default function ROICalculator({ onCalcChange }: ROICalculatorProps) {
 
         {/* Hardcoded constants display — builds credibility with sourced benchmarks */}
         <div className="grid grid-cols-2 gap-3 pt-2">
-          <ConstantBadge label="Industry Missed Call Rate" value="30%" />
-          <ConstantBadge label="Voicemail Drop-off Rate" value="85%" />
+          <ConstantBadge label="Industry Missed Call Rate" value="25%" />
+          <ConstantBadge label="Voicemail Drop-off Rate" value="80%" />
         </div>
       </div>
 
@@ -150,7 +150,7 @@ export default function ROICalculator({ onCalcChange }: ROICalculatorProps) {
         </p>
 
         <p className="text-slate-500 text-xs mt-3 max-w-sm mx-auto">
-          Based on 30% missed call rate × 85% voicemail drop-off × your inputs.
+          Based on 25% missed call rate × 80% voicemail drop-off × your inputs.
           Industry benchmarks sourced from Harvard Business Review & CallRail.
         </p>
       </div>

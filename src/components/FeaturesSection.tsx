@@ -1,9 +1,9 @@
 export default function FeaturesSection() {
   const features = [
     {
-      title: "24/7 Availability",
+      title: "Missed-Call Rescue",
       description:
-        "Missed calls happen after hours, on weekends, and when your team is busy. Our AI never clocks out, ensuring every single lead is captured instantly.",
+        "Instantly texts back anyone you miss: 'Sorry I missed you! Do you need a repair or estimate?' Books the job while you drive.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -11,9 +11,9 @@ export default function FeaturesSection() {
       ),
     },
     {
-      title: "Instant Qualification",
+      title: "24/7 Open House",
       description:
-        "We don't just take messages. The AI asks predefined qualifying questions to ensure the prospect is a fit before passing the lead to you.",
+        "Chats with leads to ask budget, timeline, & pre-approval status before you ever pick up the phone.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -21,9 +21,9 @@ export default function FeaturesSection() {
       ),
     },
     {
-      title: "Seamless Integration",
+      title: "Review Autopilot",
       description:
-        "Leads are automatically routed to your CRM, sent via SMS, or emailed to your team. Zero disruption to your current workflow.",
+        "Automatically texts happy clients a link to leave a 5-star review 1 hour after the job is marked complete.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />

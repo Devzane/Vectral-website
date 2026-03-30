@@ -13,7 +13,7 @@ export default function FinalCTASection() {
         </p>
 
         <a
-          href="sms:+1?body=DEMO"
+          href="#audit"
           className="
             inline-flex items-center gap-2 
             bg-slate-950 hover:bg-black
@@ -25,7 +25,7 @@ export default function FinalCTASection() {
             border border-slate-700
           "
         >
-          Text &apos;DEMO&apos; To Get Started
+          Book a Free System Audit
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 ml-2"
@@ -38,9 +38,7 @@ export default function FinalCTASection() {
           </svg>
         </a>
 
-        <p className="text-red-200/70 text-sm mt-6 font-medium">
-          Or call us directly at +234 902 724 2453 • 24/7 Support
-        </p>
+        {/* Phone number removed to eliminate dependency */}
       </div>
     </section>
   );

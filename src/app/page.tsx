@@ -13,6 +13,7 @@
  */
 
 import ROISection from "@/components/ROISection";
+import OvernightAdvantageSection from "@/components/OvernightAdvantageSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -41,7 +42,7 @@ export default function HomePage() {
             href="#calculator"
             className="text-sm font-semibold text-slate-300 hover:text-white border border-slate-700 hover:border-red-600 hover:text-red-400 px-4 py-2 rounded-lg transition-all duration-200"
           >
-            Calculate My Loss →
+            Book a Free System Audit
           </a>
         </div>
       </header>
@@ -116,6 +117,9 @@ export default function HomePage() {
       */}
       <ROISection />
 
+      {/* ── OVERNIGHT ADVANTAGE SECTION ─────────────────────────────────── */}
+      <OvernightAdvantageSection />
+
       {/* ── FEATURES SECTION (SOLUTION) ─────────────────────────────────── */}
       <FeaturesSection />
 
@@ -133,7 +137,10 @@ export default function HomePage() {
 
       {/* ── FOOTER ──────────────────────────────────────────────────────── */}
       <footer className="mt-auto border-t border-slate-800 py-8">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+          <a href="mailto:hello@vectralautomation.com" className="text-slate-500 hover:text-slate-300 text-sm mb-4 transition-colors">
+            hello@vectralautomation.com
+          </a>
           <p className="text-slate-600 text-sm">
             © {new Date().getFullYear()} Vectral Automation. All rights reserved.
           </p>
@@ -142,6 +149,19 @@ export default function HomePage() {
           </p>
         </div>
       </footer>
+
+    
+      {/* ── FLOATING AI CHAT WIDGET ────────────────────────────────────────────── */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <button
+          className="group flex items-center justify-center w-14 h-14 bg-red-600 rounded-full shadow-lg shadow-red-900/50 hover:shadow-red-600/40 hover:-translate-y-1 transition-all duration-300 border border-red-500"
+          aria-label="Live AI Chat"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+        </button>
+      </div>
 
     </main>
   );

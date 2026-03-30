@@ -28,14 +28,14 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 // --- Constants (industry-standard benchmarks, NOT user-adjustable) ---
-const MISSED_CALL_RATE = 0.30; // 30% of inbound calls go unanswered
-const VOICEMAIL_DROPOFF_RATE = 0.85; // 85% of people who hit voicemail never call back
+const MISSED_CALL_RATE = 0.25; // 25% of inbound calls go unanswered
+const VOICEMAIL_DROPOFF_RATE = 0.80; // 80% of people who hit voicemail never call back
 function ROICalculator({ onCalcChange }) {
     _s();
     // --- State: the three user-controlled inputs ---
     const [weeklyCallVolume, setWeeklyCallVolume] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(50);
-    const [averageJobValue, setAverageJobValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(8000);
-    const [closeRate, setCloseRate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(30);
+    const [averageJobValue, setAverageJobValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1000);
+    const [closeRate, setCloseRate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(25);
     /**
    * FORMULA (runs on every state change):
    *
@@ -163,7 +163,7 @@ function ROICalculator({ onCalcChange }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ConstantBadge, {
                                 label: "Industry Missed Call Rate",
-                                value: "30%"
+                                value: "25%"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROICalculator.tsx",
                                 lineNumber: 128,
@@ -171,7 +171,7 @@ function ROICalculator({ onCalcChange }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ConstantBadge, {
                                 label: "Voicemail Drop-off Rate",
-                                value: "85%"
+                                value: "80%"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROICalculator.tsx",
                                 lineNumber: 129,
@@ -213,7 +213,7 @@ function ROICalculator({ onCalcChange }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-slate-500 text-xs mt-3 max-w-sm mx-auto",
-                        children: "Based on 30% missed call rate × 85% voicemail drop-off × your inputs. Industry benchmarks sourced from Harvard Business Review & CallRail."
+                        children: "Based on 25% missed call rate × 80% voicemail drop-off × your inputs. Industry benchmarks sourced from Harvard Business Review & CallRail."
                     }, void 0, false, {
                         fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROICalculator.tsx",
                         lineNumber: 152,
@@ -232,7 +232,7 @@ function ROICalculator({ onCalcChange }) {
         columnNumber: 5
     }, this));
 }
-_s(ROICalculator, "ekcN2SUoHmBdbXnx5vQEOn/V6UI=");
+_s(ROICalculator, "tY8iOI6mJuCtMuCb1XPecwVBrgY=");
 _c = ROICalculator;
 /**
  * SliderInput: A labeled range slider.
@@ -391,7 +391,7 @@ function ROISection() {
     _s();
     // This is the single source of truth for the calculated annual revenue lost.
     // It lives here so both the calculator and the CTA button can access it.
-    const [calculatedLoss, setCalculatedLoss] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(158040); // Default at initial slider values
+    const [calculatedLoss, setCalculatedLoss] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(130000); // Default at initial slider values
     /**
    * useCallback memoizes this function so it has a stable reference.
    * Without this, the ROICalculator's useEffect (which depends on onCalcChange)
@@ -467,9 +467,9 @@ function ROISection() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         id: "cta-stop-losing",
-                        href: "sms:+1?body=DEMO",
+                        href: "#audit",
                         className: " group relative inline-flex items-center gap-3  bg-red-600 hover:bg-red-500  text-white font-black text-lg md:text-xl  px-8 py-5 rounded-xl  shadow-lg shadow-red-900/50 hover:shadow-red-600/40 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 border border-red-500 ",
-                        "aria-label": `Stop losing ${formatCurrency(calculatedLoss)} — Text DEMO`,
+                        "aria-label": `Stop leaving ${formatCurrency(calculatedLoss)} on the table — Book an Audit`,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "flex h-2.5 w-2.5",
@@ -494,7 +494,7 @@ function ROISection() {
                                 lineNumber: 94,
                                 columnNumber: 11
                             }, this),
-                            "Stop Losing",
+                            "Stop Leaving",
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "underline underline-offset-4 decoration-dotted",
@@ -505,7 +505,7 @@ function ROISection() {
                                 columnNumber: 11
                             }, this),
                             " ",
-                            "— Text 'DEMO' Now",
+                            "on the Table — Book an Audit",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                 xmlns: "http://www.w3.org/2000/svg",
                                 className: "h-5 w-5 group-hover:translate-x-1 transition-transform",
@@ -555,7 +555,7 @@ function ROISection() {
         columnNumber: 5
     }, this);
 }
-_s(ROISection, "Ys1r9oDTLCRBdUVEeCXKpth7AH4=");
+_s(ROISection, "tMwmuKbprTWSS59TncB8DjOvKsE=");
 _c = ROISection;
 var _c;
 __turbopack_context__.k.register(_c, "ROISection");

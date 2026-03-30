@@ -27,7 +27,7 @@ import ROICalculator from "./ROICalculator";
 export default function ROISection() {
   // This is the single source of truth for the calculated annual revenue lost.
   // It lives here so both the calculator and the CTA button can access it.
-  const [calculatedLoss, setCalculatedLoss] = useState<number>(158040); // Default at initial slider values
+  const [calculatedLoss, setCalculatedLoss] = useState<number>(130000); // Default at initial slider values
 
   /**
    * useCallback memoizes this function so it has a stable reference.
@@ -77,7 +77,7 @@ export default function ROISection() {
       <div className="mt-8 text-center">
         <a
           id="cta-stop-losing"
-          href="sms:+1?body=DEMO"
+          href="#audit"
           className="
             group relative inline-flex items-center gap-3 
             bg-red-600 hover:bg-red-500 
@@ -88,7 +88,7 @@ export default function ROISection() {
             hover:-translate-y-1 hover:scale-105
             border border-red-500
           "
-          aria-label={`Stop losing ${formatCurrency(calculatedLoss)} — Text DEMO`}
+          aria-label={`Stop leaving ${formatCurrency(calculatedLoss)} on the table — Book an Audit`}
         >
           {/* Animated pulse dot for urgency */}
           <span className="flex h-2.5 w-2.5">
@@ -97,11 +97,11 @@ export default function ROISection() {
           </span>
 
           {/* Dynamic loss amount updates live with the sliders */}
-          Stop Losing{" "}
+          Stop Leaving{" "}
           <span className="underline underline-offset-4 decoration-dotted">
             {formatCurrency(calculatedLoss)}
           </span>{" "}
-          — Text &apos;DEMO&apos; Now
+          on the Table — Book an Audit
 
           {/* Arrow — subtle directional cue */}
           <svg
