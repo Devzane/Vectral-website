@@ -87,21 +87,21 @@ export default function HomePage() {
           <strong className="text-slate-200">How much is that silence costing you?</strong>
         </p>
 
-        {/* Social proof strip (static for now) */}
+        {/* System capability metrics — honest, verifiable claims */}
         <div className="flex items-center justify-center gap-8 flex-wrap text-sm text-slate-500">
           <div className="flex items-center gap-2">
-            <span className="text-red-500 font-bold">127+</span>
-            <span>Businesses Automated</span>
+            <span className="text-red-500 font-bold">&lt; 2s</span>
+            <span>Response Time</span>
           </div>
           <div className="h-4 w-px bg-slate-700 hidden sm:block"></div>
           <div className="flex items-center gap-2">
-            <span className="text-red-500 font-bold">$2.4M+</span>
-            <span>Revenue Recovered</span>
+            <span className="text-red-500 font-bold">24/7/365</span>
+            <span>Lead Capture</span>
           </div>
           <div className="h-4 w-px bg-slate-700 hidden sm:block"></div>
           <div className="flex items-center gap-2">
-            <span className="text-red-500 font-bold"> &lt; 2s</span>
-            <span>Average Response Time</span>
+            <span className="text-red-500 font-bold">Seamless</span>
+            <span>CRM Integration</span>
           </div>
         </div>
       </section>
@@ -138,14 +138,11 @@ export default function HomePage() {
       {/* ── FOOTER ──────────────────────────────────────────────────────── */}
       <footer className="mt-auto border-t border-slate-800 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
-          <a href="mailto:hello@vectralautomation.com" className="text-slate-500 hover:text-slate-300 text-sm mb-4 transition-colors">
-            hello@vectralautomation.com
+          <a href="mailto:abdulmuiz@vectralautomation.tech" className="text-slate-500 hover:text-slate-300 text-sm mb-4 transition-colors">
+            abdulmuiz@vectralautomation.tech
           </a>
           <p className="text-slate-600 text-sm">
             © {new Date().getFullYear()} Vectral Automation. All rights reserved.
-          </p>
-          <p className="text-slate-700 text-xs mt-1">
-            Built to convert — not to impress.
           </p>
         </div>
       </footer>

@@ -443,7 +443,7 @@ function ROISection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-slate-400 mt-3 max-w-xl mx-auto text-base",
-                        children: "Adjust the sliders to match your business. The math is industry-standard. The result will be uncomfortable. That's intentional."
+                        children: "Adjust the sliders to match your business. The math is industry-standard."
                     }, void 0, false, {
                         fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
                         lineNumber: 63,
@@ -459,7 +459,7 @@ function ROISection() {
                 onCalcChange: handleCalcChange
             }, void 0, false, {
                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                lineNumber: 70,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -478,20 +478,20 @@ function ROISection() {
                                         className: "animate-ping absolute inline-flex h-2.5 w-2.5 rounded-full bg-white opacity-50"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                                        lineNumber: 95,
+                                        lineNumber: 94,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "relative inline-flex rounded-full h-2.5 w-2.5 bg-white"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                                lineNumber: 94,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, this),
                             "Stop Leaving",
@@ -501,7 +501,7 @@ function ROISection() {
                                 children: formatCurrency(calculatedLoss)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                                lineNumber: 101,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, this),
                             " ",
@@ -520,32 +520,32 @@ function ROISection() {
                                     d: "M17 8l4 4m0 0l-4 4m4-4H3"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                                lineNumber: 107,
+                                lineNumber: 106,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                        lineNumber: 78,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Vectra$2d$Automation$2f$Vectral_website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-slate-500 text-xs mt-3",
-                        children: "No commitment. 30-second setup. We reply instantly."
+                        children: "No commitment. Custom-built in under 48 hours. Zero downtime."
                     }, void 0, false, {
                         fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                        lineNumber: 121,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Vectra-Automation/Vectral_website/src/components/ROISection.tsx",
-                lineNumber: 77,
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]

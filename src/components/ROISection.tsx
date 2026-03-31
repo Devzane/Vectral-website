@@ -62,7 +62,6 @@ export default function ROISection() {
         </h2>
         <p className="text-slate-400 mt-3 max-w-xl mx-auto text-base">
           Adjust the sliders to match your business. The math is industry-standard.
-          The result will be uncomfortable. That&apos;s intentional.
         </p>
       </div>
 
@@ -119,7 +118,7 @@ export default function ROISection() {
 
         {/* Micro-copy below CTA — removes friction / objections */}
         <p className="text-slate-500 text-xs mt-3">
-          No commitment. 30-second setup. We reply instantly.
+          No commitment. Custom-built in under 48 hours. Zero downtime.
         </p>
       </div>
     </section>
